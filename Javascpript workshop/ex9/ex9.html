@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex9.css">
+    <title>Tri d'un tableau</title>
+</head>
+<body>
+    <div class="titles">
+        <h1>Tri d'un tableau</h1>
+    </div>
+    <div class="title2">
+        <h2>Enoncé</h2> 
+        <p> Ecrire un programme Javascript qui permet de trier un tableau d'entier (Utiliser n'importe quel algorithme de tri mais surtout pas la fonction Sort de l'objet Array).
+            L'utilisateur commence tout d'abord par saisir la taille du tableau, ensuite il remplit le tableau pour cliquer à la fin sur un bouton trier :  celui-ci affichera le tableau en ordre croissant ou décroissant.
+        </p>
+        </div>
+
+        <div class="start">
+          
+            <div class="exercice">
+                <div class="affect">
+                    <h2>Démo</h2>
+                    <p>Donner la taille du tableau :</p>
+                    <input type="number" id="tableau">
+                    <button id="mar" type="button" onclick="valider()">Valider</button>
+                </div>
+                <div class="affect">
+                    <p>Veuiller remplir le tableau :</p>
+                    <div id="resultat"></div>
+                    <button id="marr" type="button" onclick="trier()">Trier</button>
+                </div>
+                <div class="affect" id="message">
+                    <output id="existe"></output>
+                </div>
+            </div>
+         <div class="codesource"> 
+            <h2>Code source</h2>
+            <p>
+                <code>
+                function valider() { <br>
+                    var entrer = parseInt(document.getElementById('tableau').value) <br>
+                    for(x=1 ; x<= entrer ;x++) {<br>
+                        var inp = document.createElement('input')<br>
+                        inp.setAttribute('id', 'input'+x)<br>
+                        inp.setAttribute('type', 'Number')<br>
+                        document.getElementById('resultat').appendChild(inp)<br>
+                    }<br>
+                }
+                function trier() {<br>
+                    var entrer = parseInt(document.getElementById('tableau').value)<br>
+                    for(x=0 ; x< entrer ;x++) {<br>
+                        var inpt = document.createElement('input')<br>
+                        inpt.setAttribute('id', 'inpt'+x)<br>
+                        document.getElementById('existe').appendChild(inpt)<br>
+                    }<br>
+                    const array = []<br>
+                    const arrayy = []<br>
+                    for (let i = 1; i <= entrer; i++) {<br>
+                        array.push(parseInt(document.getElementById('input'+i) <br> .value))<br>
+                    }<br>
+                    for (let i = 0; i < entrer; i++) {<br>
+                        let min = Math.min(...array)<br>
+                        const index = array.indexOf(min);<br>
+                        arrayy.push(min)<br>
+                        document.getElementById('inpt'+i).value = min<br>
+                        array.splice(index,1)<br>
+                    }<br>
+                }<br>
+            </code>
+            </p>
+        </div>
+        </div>
+    <script src="Tri-dun-tableau.js"></script>
+</body>
+</html>

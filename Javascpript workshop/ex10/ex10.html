@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex10.css">
+    <title>ex10</title>
+</head>
+<body>
+
+
+
+    <div class="titles">
+        <h1>Recherche dans un tableau</h1>
+    </div>
+
+    <div class="alles">
+
+    <div class="start">
+        <p>Donner la taille du tableau :</p>
+        <input type="number" id="enter" placeholder="Enter a number">
+        <button id="mar" type="button" onclick="valider()">Valider</button>
+
+        <p>Veuiller remplir le tableau :</p>
+        <div id="outp"></div>
+    
+        <p >Donner la valeur à rechercher dans le tableau :</p>
+        <input type="number" id="valeur" placeholder="Value">
+        <button id="marr" type="button" onclick="chercher()">Search</button>
+        <br>
+        <div id="existe"></div>
+    </div>
+
+    <div class="codesource"> 
+        <h2>Code source</h2>
+        <p>
+            <code>
+            function valider() { <br>
+                let x = ""; <br>
+                let out = document.getElementById('enter').value ; <br>
+                    if(out <= 10){ <br>
+                        for (let i = 0; i <out; i++){ <br>
+                        x = x +"<nput id=en" + i +">" <br>
+                        document.getElementById('outp').innerHTML = x <br>
+                        }<br>
+                    } <br>
+                    else{<br>
+                        document.getElementById('outp').innerHTML = "Entrer un valeur entre 1 et 10" <br>
+                    }<br>
+                }<br>
+                function chercher() {<br>
+                let valeur = document.getElementById('valeur').value;<br>
+                let x = "";<br>
+                    for(let j = 0 ; j <= 10 ; j++){<br>
+                        x = x+" "+document.getElementById("en"+j).value<br>
+                        if(x.includes(valeur)){<br>
+                        document.getElementById('existe').innerHTML = "La valeur que vous recherchez existe."<br>
+                        }<br>
+                        else {<br>
+                        document.getElementById('existe').innerHTML = "La valeur que vous recherchez n'existe pas."<br>
+                        }<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+    </div>
+
+
+</div>
+
+<script src="ex10.js"></script>
+</body>
+</html>

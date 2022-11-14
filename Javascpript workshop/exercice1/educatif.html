@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="permuter.css">
+  <title>educatif</title>
+</head>
+<body>
+
+  <div class="titles">
+  <h1>Permutation de deux nombres</h1></div>
+
+  <div class="title2">
+  <h2>Enoncé</h2>
+  <p>Ecrire un script qui permute deux nombres saisis dans deux inputs</p>
+  </div>
+
+
+
+
+  <div class="exercice">
+    <h2>Démo</h2>
+    <form name="reverse">
+      <input type="text" name="a" placeholder="Number1">
+      <input class="btn" type="button" value="Permuter" onclick="permuter()">
+      <input type="text" name="b" placeholder="Number2">
+    </form>
+  </div>
+
+  <div class="codesource">
+      <h2>Code Source</h2>
+      
+    <p>
+      <code>
+        function permuter(){ <br>
+          x=document.reverse.a.value; <br>
+          document.reverse.a.value = document.reverse.b.value; <br>
+          document.reverse.b.value =x; <br>
+      } <br>
+    
+      </code>
+    </p>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

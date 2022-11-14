@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercice5.css">
+    <title>exercice5</title>
+</head>
+<body>
+    <div class="titles">
+        <h1>Devine le nombre </h1>
+    </div>
+    <div class="title2">
+        <h2>Enoncé</h2>
+        <p>
+            L'utilisateur doit deviner un nombre entre 1 et 50 que le programme a choisi aléatoirement en 10 tentatives. <br>
+            Quand l'utilisateur entre une valeur,
+            on lui affiche le nombre de tentatives restantes, ainsi qu'un message indiquant si sa réponse est correcte ou pas.
+        </p>
+        </div>
+
+<div class="alles">
+    <div class="start">
+        <h2>Démo</h2>
+        <p>Guess a number between 1 and 10</p>
+        <p id="outputText">Enter a number below</p>
+        <p> Tentatives restantes : <span id="show"></span></p>
+        <input id="userInput">
+        <button id="enterButton">Enter</button>
+        <button id="againButton">Play again</button>
+    </div>
+
+    <div class="codesource">
+        <h2>Code source</h2>
+        <p>
+            <code>
+            var enterButton = document.getElementById('enterButton'); <br>
+var againButton = document.getElementById('againButton');<br>
+var output = document.getElementById('outputText');<br>
+var tentative = 10 ;<br>
+var randomNumber = Math.ceil(Math.random()*50);<br>
+var i = 1 ;<br><br>
+
+
+function checkNumber(){<br>
+var input = document.getElementById('userInput').value;<br><br>
+
+if((tentative - i) == 0 ) {<br>
+    enterButton.setAttribute('disabled','')<br>
+    output.style.color="red";<br>
+    enterButton.style.background="red";<br>
+}<br><br>
+
+if(input == randomNumber){<br>
+    output.innerHTML="You guessed right "+ ", "+ " it was "+ randomNumber;<br>
+    output.style.color="green";<br>
+}<br><br>
+else if(input>randomNumber && input<50){<br>
+    output.innerHTML="You guessed too high";<br>
+    output.style.color="red";<br>
+}<br><br>
+else if(input<randomNumber && input>1){<br>
+    output.innerHTML="You guessed too low";<br>
+    output.style.color="red";<br>
+}<br>
+else if(input<1){<br>
+    output.innerHTML="Higher, it has to be between 1 and 50";<br>
+    output.style.color="red";<br>
+}<br>
+else if(isNaN(input)){<br>
+    output.innerHTML="That's not a number!";<br>
+    output.style.color="red";<br>
+}<br>
+else{<br>
+    output.innerHTML="Lower, it has to be between 1 and 50";<br>
+    output.style.color="red";<br>
+}<br><br>
+
+    document.getElementById("show").innerHTML = `${tentative - i}`;<br>
+    i++;<br>
+
+}<br><br>
+
+enterButton.addEventListener('click', checkNumber);<br>
+againButton.addEventListener('click', function(){<br>
+location.reload();<br>
+})
+</code>
+</p>   
+        
+    </div>
+
+</div>
+    <script src="exercice5.js"></script>
+</body>
+</html>

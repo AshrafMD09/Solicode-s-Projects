@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="ex8.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowels</title>
+</head>
+<body>
+
+    <!--  Compter le nombre de voyelles dans une chaine -->
+
+<div class="titles">
+    <h1> Compter le nombre de voyelles dans une chaine </h1>
+</div>
+
+<div class="title2">
+<h2>Enoncé</h2> 
+<p> Ecrire un programme Javascript qui permet de calculer le nombre de voyelles (a,e,i,o,u,y)
+    dans une phrase saisie par l'utilisateur. </p>
+</div>
+
+    <div class="alles">
+
+        <div class="start">
+
+        <h2 class="demo">Démo</h2>
+    <input  type="text" placeholder="Type a text" id="text">
+    <p id="resultat"></p>
+    <button type="button" onclick="compter()">Count the numbers <br> of vowels</button>
+
+        </div>
+
+    <div class="codesource">
+    <h2>Code source</h2>
+
+    <p >
+        <code>
+        function compter(){ <br>
+            var str =document.getElementById('text').value;<br>
+            var voyelles ="aeiouyAEIOUY";<br>
+            var ctr=0;<br>
+            for(var x=0;x<str.length;x++){<br>
+            for(var i=0;i<voyelles.length;i++){<br>
+                if(str[x]==voyelles[i])<br>
+                {<br>
+                    ctr++;<br>
+                }<br>
+            }<br>
+            document.getElementById("resultat").innerHTML="the number of vowel is "+ctr;<br>
+        }<br>
+        } 
+    </code>
+    </p>
+    
+
+    </div>
+
+    </div>
+
+
+<script src="voyelles.js"></script>
+</body>
+</html>

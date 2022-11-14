@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex3.css">
+    <title>bouclefor</title>
+</head>
+<body>
+  <div class="titles">
+    <h1>Table de multiplication</h1>
+    </div>
+
+    <div class="title2">
+    <h2>Enoncé</h2>
+    <p>Afficher la table de multiplication d’un nombre saisi par l’utilisateur dans un input.</p>
+    </div>
+
+
+
+  <div class="alles">
+
+    <div class="start">
+          <h2>Demo</h2>
+        <div class="number">
+          <input type="number" id="number" placeholder="type a number">
+          <button id="button">valider</button >
+        </div>
+      
+        
+        <div id="resultat" > <!-- result --> </div>
+        </div>
+
+
+    <div class="codesource">
+      <h2> Code source</h2>
+        <p>
+          <code> document.getElementById('button').onclick=function(){<br>
+  
+          var i,resultat="";<br>
+          var x = document.getElementById('number').value ;<br>
+          
+          for( i=1; i<=10; i++){ <br>
+          
+          resultat=resultat+"<br>"+x+"x"+i+"="+i*x+"; <br>
+          document.getElementById('rslt').innerHTML=resultat; <br>
+          }    <br>
+          }
+        </code>
+        </p>
+      </div>
+      
+    </div>
+      <script src="ex3.js"></script>
+</body>
+</html>

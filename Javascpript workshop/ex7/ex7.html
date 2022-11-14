@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex7.css">
+    <title>rechercher et supprimer</title>
+</head>
+<body>
+    <div class="titles">
+        <h1>Recherche et suppression dans une chaine</h1>
+    </div>
+    <div class="title2">
+        <h2>Enoncé</h2>
+        <p>
+            Ecrire un programme Javascript qui demande à l'utilisateur de saisir une phrase dans une zone de texte et un mot dans une autre zone de texte. <br>
+            Le clique sur le bouton rechercher affiche un message si le mot existe dans la phrase ou non. <br>
+            Le clique sur le bouton supprimer permet d'effacer toutes les occurrence du mot dans la phrase ( si le mot existe bien sûr). 
+        </p>
+        </div>
+
+        <div class="alles">
+            <div class="all1">
+            <div class="start">
+                    <h3>Saisir une phrase</h3>
+                    <input id="phrase1" type="text" placeholder="Saiser votre phrase"> <br>
+            </div>
+
+            <div class="phrase2">
+
+                <h3>Saisir mot a rechercher ou a supprimer</h3>
+                <input id="mots" type="text" placeholder="Saiser le mot">
+
+            </div>
+
+        
+
+    <div class="botton">
+
+            <button id="button" onclick="saiserPhrase()">Recherche</button>
+            <button id="clear" onclick="clearOcurences()">Supprimer les occurences</button>
+            
+            <div class="bloc">
+
+            <p id="resultat">
+                <!-- *********** -->
+            </p>
+
+            <button id="reset"> Again!</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="codesource">
+
+        <h2>Code Source</h2>
+
+        <p>
+            <code>
+            
+    function saiserPhrase(){ <br>
+    document.getElementById('button').onclick=function(){ <br>
+    var str = document.getElementById('phrase1').value; <br>
+    var index = str.indexOf(document.getElementById('mots').value); <br>
+    if(index !== -1){ <br>
+        document.getElementById('resultat').innerHTML="Le mot existe!" <br>
+    } else{ <br>
+        document.getElementById('resultat').innerHTML="Le mot n'existe pas!"; <br>
+    }<br>
+    }<br>
+    document.getElementById('reset').onclick=function(){<br>
+    location.reload();<br>
+    }<br>
+}<br><br>
+
+function clearOcurences(){<br>
+    document.getElementById('clear').onclick=function(){<br>
+
+    var str = document.getElementById('phrase1').value;<br>
+
+    var index = document.getElementById('mots').value;<br>
+
+    var ret = str.replace ( index , '' );<br>
+
+    document.getElementById('resultat').innerHTML=ret;<br>
+    }<br>
+
+    document.getElementById('reset').onclick=function(){<br>
+    location.reload();<br>
+    }<br>
+}
+</code>
+        </p>
+
+    </div>
+
+    </div>
+
+        
+
+<script src="ex7.js"></script>
+</body>
+</html>

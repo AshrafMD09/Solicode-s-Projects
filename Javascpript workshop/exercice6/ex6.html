@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex6.css">
+    <title>ex6</title>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pyramid triangle star pattern - javascript</title>
+    </head>
+
+    <body>
+
+        <div class="titles">
+            <h1>Losange en étoiles</h1>
+        </div>
+        <div class="title2">
+            <h2>Enoncé</h2>
+            <p>
+                Ce programme a pour objectif de dessiner un losange en étoiles dont la longueur des diagonales est un nombre impair saisi par l'utilsateur. <br>
+                Dans le cas où l'utilisateur entre un nombre pair, il faut afficher une erreur.   
+            </p>
+            </div>
+
+<div class="alles">
+
+    <div class="start">
+        <input id="stars" type="text" placeholder="Enter a number">
+
+        <button id="btn" onclick="dessinEtoile()">Dessign</button>  
+    
+        <p id="result">
+        <!-- ******************stars *********************-->
+        </p>
+
+    </div>
+
+    <div class="codesource">
+        <h2>Code Source</h2>
+        <p>
+            <code>
+            function dessinEtoile() { <br>
+                // print stars in Diamond-shaped pattern <br>
+                var etoile = document.getElementById("etoile").value; <br>
+                var para = document.getElementById("para"); <br>
+                var i, k;<br>
+                for (i = 1; i <= etoile; i++) { <br>
+                    for (k = 1; k <= i; k++) { <br>
+                        para.innerHTML += "*"; <br>
+                    } <br>
+                    para.innerHTML += "<br>";  <br>
+                } <br>
+            } <br>
+        </code>
+        </p>
+    </div>
+</div>
+    </body>
+    
+<script src="ex6.js"></script>
+
+</body>
+</html>

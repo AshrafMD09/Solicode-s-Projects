@@ -1,0 +1,218 @@
+/* devanagari */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  /* latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+                    /* start */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(205, 220, 255);
+}
+
+.titles{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 0px;
+    color: rgb(113, 56, 6);
+}
+
+.title2{
+    text-align: center;
+    
+
+
+}
+
+h2{
+    text-align: center;
+    padding: 10px 0px;
+    color: rgb(138, 69, 9);;
+}
+
+.alles{
+    width: 100%;
+    height: 60vh;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.start{
+    width: 40%;
+    margin-left: 10px;
+}
+
+
+input{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px 0px 0px 0px;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+#resultat{
+    margin-top: 25px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 30px 10px;
+    width: 97%;
+
+}
+
+.codesource{
+    height: 50vh;
+    width: 45%;
+    
+}
+
+.codesource p{
+    padding: 15px 0px;
+    padding-left: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+
+
+
+@media only screen and (max-width: 415px){
+
+    body{
+        height: 750px;
+    }
+
+    .titles{
+        width: 100%;
+        height: 90px;
+        padding: 15px 0px;
+    }
+
+    
+    .titles,p{
+        font-size: 15px;
+        padding-right: 10px;
+    }
+
+    h1{
+        font-size: 27px;
+    }
+
+    .alles{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .start{
+        height: 300px;
+        margin-top: 30px;
+        width: 100%;
+        display: block;
+    }
+
+    input{
+        height: 50px;
+        width: 394px;
+        margin-left: 3.5px;
+    }
+
+
+#resultat {
+    margin-left: 3.5px;
+    width: 91%;
+}
+
+button{
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 7px;
+}
+
+
+    .codesource{
+        margin-top: 20px;
+        height: 50vh;
+        width: 97%;
+        margin-left: 4px;
+        margin-right: 3.5px;
+    }
+    .codesource p{
+        padding: 5px 5px;
+        font-size: small;
+        margin-left: 3.5px;
+    
+    }
+
+}

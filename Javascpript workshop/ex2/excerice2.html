@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="excerice2.css">
+    <title>js workshop</title>
+</head>
+<body>
+    <div class="titles">
+        <h1>Valider une date</h1>
+    </div>
+
+        <div class="title2">
+        <h2>Enoncé</h2>
+        <p>Ecrire un script qui permet de saisir les trois champs d'une date (jour, mois et année)
+            et d'indiquer si la date est correcte ou non</p>
+        </div>
+        
+    <div class="exercice">
+        <h2>Démo</h2>
+        <div class="datevalidator">
+        <input  type="text" placeholder="MM" id="month"> 
+        <input type="text" placeholder="DD" id="day"> 
+        <input type="text" placeholder="YYYY" id="year">
+        <button id="btnCheck">Check</button> 
+        <h3 id="rs">Result</h3>
+        </div>    
+    </div>
+
+    <div class="codesource">
+        <h2>Code Source</h2>
+        <p>
+            <code>
+            document.getElementById('btnCheck') <br>
+            .addEventListener('click', function(){ <br>
+                var j, m , a; <br>
+                var cas1, cas2, cas3, cas4; <br>
+                var j = document.querySelector('#day').value;<br>
+                var m = document.querySelector('#month').value;<br>
+                var a = document.querySelector('#year').value;<br>
+                // var result = document.querySelector('h3');<br><br>
+            
+                // var btnCheck = document.querySelector('button');<br>
+                // var j=inputJour.value;<br>
+                // var m=inputMois.value;<br>
+                // var a=inputAnnee.value;<br><br>
+            
+                cas1 = a>0 && (m==1 || m==3 || m==5 || m==7 || m==8 || m==10 || m==12) && (j>=1 && j<=31);<br>
+                cas2 = a>0 && (m==4 || m==6 || m==9 || m==11) && (j>=1 && j <=30);<br>
+                cas3 = a>0 && m==2 && a%4==0 && j>=1 && j<=29;<br>
+                cas4 = a>0 && m==2 && a%4!=0 && j>=1 && j<=28;<br><br>
+            
+                if(cas1 || cas2 || cas3 || cas4) {<br>
+                    document.getElementById("rs").innerHTML = "la date est valide";<br>
+                }<br>
+                else {<br>
+                    document.getElementById("rs").innerHTML = "la date non valide"<br>
+                }<br>
+            
+            });
+            
+            </code>
+        </p>
+    </div>
+
+
+    <script src="ex2.js"></script>
+</body>
+
+</html>

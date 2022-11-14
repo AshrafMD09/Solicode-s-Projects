@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercice4.css">
+    <title>exercice4</title>
+</head>
+<body>
+
+        <div class="titles">
+            <h1>Calculator</h1>
+        </div>
+
+        <div class="title2">
+            <h2>Enoncé</h2>
+        <p>
+            Créez 4 fonctions Javascript (Somme, Soustraction, Division, Multiplication). L'utilisateur saisie deux nombres dans deux inputs, choisi ensuite une opération arithmétique.
+            <br> Le résultat est donné par l'une des 4 fonctions Javascript. 
+        </p>
+            </div>
+
+<div class="alles"> 
+
+    <div class="start">
+        <h2 class="calc">Start</h2>
+    <input type="text" id="n1" placeholder="Number 1"/><br/><br/>
+    <input type="text" id="n2" placeholder="Number 2"/><br/><br/>
+    
+    <select id="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="X">X</option>
+    </select>
+
+    <!-- ******************result *********************-->
+
+    <button onclick="calc();">=</button> <br>
+    <input type="text" id="result" placeholder="Result"/>
+
+    </div>
+
+    <div class="codesource">
+        <h2>Code Source</h2>
+        <p>
+            <code>
+            function calc()<br>
+            {<br>
+                var n1 = parseFloat(document.getElementById('n1').value);<br>
+                var n2 = parseFloat(document.getElementById('n2').value);<br>
+                
+                var oper = document.getElementById('operators').value;<br>
+                
+                if(oper === '+')<br>
+                {<br>
+                    document.getElementById('result').value = n1+n2;<br>
+                }
+                <br>
+                if(oper === '-')<br>
+                {<br>
+                    document.getElementById('result').value = n1-n2;<br>
+                }<br>
+                
+                if(oper === '/')<br>
+                {<br>
+                    document.getElementById('result').value = n1/n2;<br>
+                }<br>
+                
+                if(oper === 'X')<br>
+                {<br>
+                    document.getElementById('result').value = n1*n2;<br>
+                }<br>
+            }<br>
+        </code>
+        </p>
+    </div>
+
+</div>
+
+    <script src="exercice4.js"></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom,#3aa5a4,#7ae5e4);
+    background-attachment: fixed;
+}
+            /*Name*/
+
+.namediv{
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    background-image: url(IMG/backgroundimg.png) ;
+    background-repeat:no-repeat;
+    background-position: center;
+    opacity: 0.4;
+}
+
+.myname{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    top: 100px;
+    left: 580px;
+}
+
+.name{
+    color: white;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.status{
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+            /*About*/
+
+.aboutdiv{
+    border: none;
+    border-radius: 2px;
+    height: 350px;
+    width: 90%;
+    background-color: white;
+    display: block;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 30px;
+}
+
+.titles{
+    font-family: 'Oswald', sans-serif;
+    font-size: 33px;
+    margin-left: 2.5%;
+    padding-top: 35px;
+}
+
+.myphoto{
+    float: left;
+    width: 200px;
+    margin: 35px 35px 0px 2.5%;
+}
+
+.description{
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 30px;
+    margin: 30px 30px 0px 0px ;
+}
+           /*Projects*/
+
+.projectsdiv{
+    border: none;
+    border-radius: 2px;
+    height: 500px;
+    width: 90%;
+    background-color: white;
+    display: block;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 30px;
+}
+
+.project{
+    float: left;
+    margin: 25px 0px 0px 2.5%;
+    width: 30%;
+    height: 200px;
+}
+
+.projectname{
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.projectdate{
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    color: gray;
+    font-size: 20px;
+}
+            /*Work*/
+
+.workdiv{
+    border: none;
+    border-radius: 2px;
+    height: 450px;
+    width: 90%;
+    background-color: white;
+    display: block;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 30px;
+}
+
+.work1{
+
+    margin:35px 0px 0px 2.5% ;
+}
+
+.workd{
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    color: gray;
+    font-size: 18px;
+}
+
+.workt{
+    margin-bottom: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.workp{
+    font-family: 'Lato', sans-serif;
+    color: gray;
+    
+}
+            /*Education*/
+
+.educationdiv{
+    border: none;
+    border-radius: 2px;
+    height: 310px;
+    width: 90%;
+    background-color: white;
+    display: block;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 30px;
+}
+.education1{
+    width: 20%;
+    height: 200px;
+    float: left;
+    margin:30px 0px 0px 2.5%;
+}
+.education2{
+    float: left;
+    margin:30px 0px 0px 15%;
+    width: 20%;
+    height: 200px;
+}
+.education3{
+    width: 20%;
+    height: 200px;
+    float: left;
+    margin:30px 0px 0px 15%;
+}
+
+
+.educationd{
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    color: gray;
+    font-size: 18px;
+}
+.educationt{
+    margin-bottom: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+}
+.educationuni{
+    font-family: 'Lato', sans-serif;
+    color: gray;
+}
+        /*Language*/
+
+.languagediv{
+    border: none;
+    border-radius: 2px;
+    height: 250px;
+    width: 90%;
+    background-color: white;
+    display: block;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 30px;
+}
+
+.language1{
+    float: left;
+    margin:30px 0px 0px 2.5%;
+    width: 20%;
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+}
+
+.language2{
+    float: left;
+    margin:30px 0px 0px 15%;
+    width: 20%;
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+}
+
+.language3{
+    float: left;
+    margin:30px 0px 0px 15%;
+    width: 20%;
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+}
+.lang{
+    color: gray;
+}
+.str{
+    color: black;
+}
+
+            /*Social Network*/
+.social{
+    border: none;
+    border-radius: 2px;
+    height: 250px;
+    width: 90%;
+    background-color: white;
+    display: block;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 30px;
+ }
+
+ .logo1{
+    float: left;
+    margin-top:30px;
+    margin-left: 2.5%;
+    width: 20%;
+}
+
+.logo2{
+    float: left;
+    margin-top:30px;
+    margin-left: 15%;
+    width: 20%;
+}
+
+.logo3{
+    float: left;
+    margin-top:30px;
+    margin-left: 15%;
+    width: 20%;
+}
+
+.sociallogos{
+    width: 8%;
+}
+
+.socialnames{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    
+}
+
+.socialnames:hover{
+    color:gray ;
+
+}
+            /*Contact*/
+.contact{
+    border: none;
+    border-radius: 2px;
+    height: 430px;
+    width:  90%;
+    background-color: white;
+    display: block;
+    margin: auto;
+    padding: auto;
+    
+ }
+ .inputs{
+    margin-top: 20px;
+ }
+ 
+ .emailsubject{
+    border: none;
+    border-radius: 2px;
+    width: 90%;
+    height: 30px;
+    margin-left: 2.5%;
+    margin-bottom: 20px;
+    background-color: rgba(198, 188, 188, 0.607);
+    border: rgba(198, 188, 188, 0.607) 1px solid;
+    font-family: 'Lato', sans-serif;
+ }
+ .txtmsg{
+    border: none;
+    border-radius: 2px;
+   width: 90%;
+   height: 130px;
+   margin-left: 2.5%;
+   background-color: rgba(198, 188, 188, 0.607);
+   border: rgba(198, 188, 188, 0.607) 1px solid;
+   font-family: 'Lato', sans-serif;
+
+ }
+ .sendmsg{
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    float: left;
+    margin-top: 10px;
+    margin-left: 2.5%;
+ }
+ .sendmsg:hover{
+    background-color: #7ae5e4;
+    color: rgb(24, 24, 24);
+    font-weight: bold;
+ }
+.feet{
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+.emailsubject:hover{
+    background-color: #97d9d8;
+    
+}
+.txtmsg:hover{
+    background-color: #97d9d8;
+}
