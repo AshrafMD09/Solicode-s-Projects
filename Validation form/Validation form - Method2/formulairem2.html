@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulairem2.css">
+    <title>formulaire</title>
+</head>
+<body>
+<div class="all">
+<div class="div1">
+
+    <h1 id="hh">Choose your Clubs</h1>
+
+    <form id="form1">
+    <input type="text" placeholder="Last name" id="lastName" class="firstInputs"><br>
+    <p id="msg1"></p>
+    <input type="text" placeholder="First name" id="firstName" class="firstInputs"><br>
+    <p id="msg2"></p>
+    <input type="text" placeholder="Email" id="email" class="firstInputs"><br>
+    <p id="msg3"></p>
+    <input type="text" placeholder="Mobile" id="mobile" class="firstInputs"><br>
+    <p id="msg4"></p><br>
+    <label for="gender" class="choises">Gender :</label>
+
+    
+    <label for="male" class="choise">Male</label>
+    <input type="radio" name="gender" id="male" >
+    
+    <label for="female" class="choise">Female</label>
+    <input type="radio" name="gender" id="female"><br>
+    <p id="msg5"></p><br>
+    
+
+    <label for="groups" class="choises">Groupe :</label>
+    <label for="DW101" class="choise">DW101</label>
+    <input type="radio" name="groups" id="grp1" >
+    <label for="DW102" class="choise">DW102</label>
+    <input type="radio" name="groups" id="grp2" class="">
+    <label for="DW103" class="choise">DW103</label>
+    <input type="radio" name="groups" id="grp3" class="">
+    <label for="DM101" class="choise">DM101</label>
+    <input type="radio" name="groups" id="grp4" class="">
+    <label for="DM102" class="choise">DM102</label>
+    <input type="radio" name="groups" id="grp5" class=""><br>
+    <p id="msg6"></p><br>
+
+
+
+    <label for="clubs" class="choises">Clubs :</label><br><br>
+    
+    <select multiple name="club" id="cluub" class="selects">
+        <option value="Informatique" name = "club" id="club1">Informatique</option>
+        <option value="Robotics" name = "club" id="club2">Robotics</option>
+        <option value="Chess" name = "club" id="club3">Chess</option>
+        <option value="Music" name = "club" id="club4">Music</option>
+        <option value="Foot" name = "club" id="club5">Foot</option>
+        <option value="Theater" name = "club" id="club6">Theater</option>
+    </select><br><p id="msg7"></p><br>
+
+    <button type="submit" id="submitBtn">Submit</button>
+
+    </form>
+    <h3 id="msg8"></h3>
+</div>
+
+<div class="div2">
+<img src="img\Solicode_img.jpg" alt="#">
+<h2>A propos de nous</h2>
+<p>
+    SOLICODE est un centre de formation solidaire et inclusif, ouvert aux jeunes motivés et intéressés par les métiers du Développement Web et Mobile. L’apprenant à SOLICODE se considère comme acteur principal tout au long de son processus d’apprentissage. C’est lui qui construit ses savoirs à travers la réalisation des projets, individuels ou par groupe, inspirés du milieu professionnel afin de favoriser une meilleure insertion au marché de travail. La formation au sein de SOLICODE est axée sur différents volets: technique, soft-skills, entreprenariat et gestion de projet. A l’issue de cette formation, les apprenants bénéficieront
+    d'une double certification délivrée par SIMPLON et OFPPT.</p>
+</div>
+</div>
+    
+<script src="formulairem2.js"></script>
+</body>
+
+</html>
