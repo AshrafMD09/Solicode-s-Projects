@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cosmetics.css">
+    <title>cosmetics</title>
+</head>
+<body>
+
+    <h1>Cosmetics Shop</h1>
+
+    <div class="all">
+
+    <div class="section1">
+
+        <h2>Search a Product</h2>
+
+        <input type="text" placeholder="Name" class="infos" id="nom">
+        <p id="msg1" ></p>
+        <label for="prtype" class="lbl">Type :</label><br>
+        <select id="prtype">
+            <option ></option>
+            <option >Parfums</option>
+            <option >Soins esthétiques</option>
+            <option >Produits solaires</option>
+            <option > Beauté des mains et des pieds</option>
+            <option >Produits de maquillage</option>
+            <option >Entretien capillaires</option>
+            <option >Hygiène et toilette</option>
+        </select><br>
+        <p id="msg2" ></p>
+
+        <label for="brand" class="lbl">Brand :</label><br>
+        <select id="brand">
+            <option></option>
+            <option >Dior</option>
+            <option >Morphe</option>
+            <option >The Ordinary</option>
+            <option >Coco and Eve</option>
+            <option >Clinique</option>
+        </select><br>
+        <p id="msg3" ></p>
+
+        <input type="text"  placeholder="Price" class="infos" id="price">
+        <p id="msg4" ></p>
+
+        <input type="date"  class="infos" id="date">
+        <p id="msg5" ></p>
+
+        <label for="yespromo" class="lbl">Is on promotion ?</label>
+        <label for="yespromo">Yes</label>
+        <input type="radio"  name="yn" class="ysno" id="yespromo" >
+        <label for="nopromo">No</label>
+        <input type="radio"  name="yn" class="ysno" id="nopromo" > 
+        <p id="msg6" ></p>
+
+        <button  id="btnsave">Add</button>
+        
+    </div>
+
+    <div class="section2">
+        <h3>Product Name</h3>
+        <div class="inf" id="infooos"></div>
+
+        <table id="table">
+            <tr>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Price</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>promotion</th>
+                <th>Actions</th>
+            </tr>
+            <tbody id="tbody"></tbody>
+        </table>
+
+
+    </div>
+
+</div>
+    
+    <script src="cosmetics.js"></script>
+</body>
+</html>
