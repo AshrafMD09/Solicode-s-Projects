@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+*{
+    font-family: 'PT Serif', serif;
+}
+body{
+    background-color: #E8DED1;
+}
+
+nav{
+    background-color: #E8DED1;
+    font-family: 'inter' ;
+}
+
+.nav-link{
+    color: #866C56;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.logoimg{
+    width: 9rem;
+}
+
+.navIcons{
+    color: #6A7B67;
+    margin: 0 0.5rem;
+}
+
+.btnSignup{
+    font-family: 'Lato', sans-serif;
+    background-color: #6A7B67;
+    text-decoration: none;
+    color: white;
+    border: solid #6A7B67 3px;
+    border-radius: 8px;
+}
+
+.btnLogin{
+    font-family: 'Lato', sans-serif;
+    background-color: none;
+    text-decoration: none;
+    color: black;
+    border: solid #6A7B67 3px;
+    border-radius: 8px;
+}
+
+.btnLogin:hover{
+    background-color: #6A7B67;
+    color: white;
+}
+
+.cardBook{
+    width: 18rem;
+    height: 26.875rem;
+}
+.bookimg{
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.bookimg img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.book-title{
+    font-weight: bold;
+    color: black;
+}
+
+.summary{
+    text-align: justify;
+}
+
+.readDownloadSection{
+    width: 60%;
+    height: 8%;
+    
+}
+
+.downloadform{
+    width: 40%;
+    height: 100%;
+}
+
+.readbtn{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    background-color: #6A7B67;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.downloadbtn{
+    width: 100%;
+    height: 100%;
+    background-color: #6A7B67;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.favIcon{
+    width: 10%;
+    display: flex;
+    align-items: end;    
+}
+
+.commenttitle,.leaveCommentTitle{
+    color: #6A7B67;
+    font-weight: bold;
+}
+
+.comments{
+    background: rgba(106, 123, 103, 0.2);
+    
+}
+
+.comments p{
+    margin: 0;
+}
+
+.commetDate{
+    color: #6A7B67;
+}
+
+.editDelete{
+    text-decoration: none;
+    color: #684242;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.commentinput{
+    background: rgba(134, 108, 86, 0.2)!important;
+}
+
+.btnsend{
+    background: #6A7B67;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+.favbtn{
+    background: none;
+    border: none;
+    color:#6A7B67;
+}
+
+
+
+
+
+
+
+
+
+
+
+

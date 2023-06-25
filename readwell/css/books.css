@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+*{
+    font-family: 'PT Serif', serif;
+}
+body{
+    background-color: #E8DED1;
+}
+
+nav{
+    background-color: #E8DED1;
+    font-family: 'inter' ;
+}
+
+.nav-link{
+    color: #866C56;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.logoimg{
+    width: 9rem;
+}
+
+.navIcons{
+    color: #6A7B67;
+    margin: 0 0.5rem;
+}
+
+.btnSignup{
+    font-family: 'Lato', sans-serif;
+    background-color: #6A7B67;
+    text-decoration: none;
+    color: white;
+    border: solid #6A7B67 3px;
+    border-radius: 8px;
+}
+
+.btnLogin{
+    font-family: 'Lato', sans-serif;
+    background-color: none;
+    text-decoration: none;
+    color: black;
+    border: solid #6A7B67 3px;
+    border-radius: 8px;
+}
+
+.btnLogin:hover{
+    background-color: #6A7B67;
+    color: white;
+}
+
+#btnFilter{
+    font-family: 'Lato', sans-serif;
+    background-color: #6A7B67 !important;
+    color: white;
+}
+
+#searchInput , #categories{
+    font-family: 'Lato', sans-serif;
+    background: rgba(255, 255, 255, 0.58);
+}
+
+#categories{
+    border: solid #6A7B67 2px;
+    border-radius: 5px;
+}
+
+.cardBook{
+    width: 18rem;
+    height: 34.75rem;
+}
+.bookimg{
+    height: 26.875rem;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.bookimg img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.book-title{
+    font-weight: bold;
+    color: #866C56;
+    font-size: 2rem;
+}
+
+.btnMore{
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    background-color: #6A7B67;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+

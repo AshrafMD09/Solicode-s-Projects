@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    
+    .tt{
+        width: 35%;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        padding: 5% 5%;
+        
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background:  linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/img1.jpg);
+        background-size: cover;
+        background-position: center;
+        
+    }
+    h1{
+        font-size: 4rem;
+        font-family: 'PT Serif', serif;
+    }
+
+    .par{
+    color : white;
+    font-family: 'PT Serif', serif;
+}
+
+.btnsignin{
+    background-color: #866C56 ;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'PT Serif', serif;
+
+}
+
+    @media screen and (max-width: 850px ) {
+
+    .tt{
+        width: 60%;
+    }
+
+
+    }

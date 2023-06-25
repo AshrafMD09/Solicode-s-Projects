@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+*{
+    font-family: 'PT Serif', serif;
+}
+body{
+    background-color: #E8DED1;
+}
+
+nav{
+    background-color: #E8DED1;
+    font-family: 'inter' ;
+}
+
+.nav-link{
+    color: #866C56;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.logoimg{
+    width: 9rem;
+}
+
+.navIcons{
+    color: #6A7B67;
+    margin: 0 0.5rem;
+}
+
+.btnSignup{
+    font-family: 'Lato', sans-serif;
+    background-color: #6A7B67;
+    text-decoration: none;
+    color: white;
+    border: solid #6A7B67 3px;
+    border-radius: 8px;
+}
+
+.btnLogin{
+    font-family: 'Lato', sans-serif;
+    background-color: none;
+    text-decoration: none;
+    color: black;
+    border: solid #6A7B67 3px;
+    border-radius: 8px;
+}
+
+.btnLogin:hover{
+    background-color: #6A7B67;
+    color: white;
+}
+.backgroundPhoto{
+    background:  linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;  
+}
+
+.coverscetion{
+    height: 70%;
+}
+
+.titleSection{
+    width: 55%;
+    margin: auto;
+    background: rgba(165, 143, 126, 0.5);
+    border-radius: 20px;
+}
+
+h1{
+    margin-top: 8rem;
+    font-size: 4rem;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+}
+
+.btnMore{
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    background-color: #6A7B67;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.cardBook{
+    width: 18rem;
+    height: 34.75rem;
+}
+.bookimg{
+    height: 26.875rem;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.bookimg img {
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #866C56;
+}
+
+.book-title{
+    font-weight: bold;
+    color: #866C56;
+    font-size: 2rem;
+}
+
+.cardcategorie{
+    width: 23.75rem;
+    height: 37.5rem;
+    border-radius: 30px;
+    background: rgba(134, 108, 86, 0.27);
+    box-shadow: 0px 4px 11px #866C56;
+    
+}
+
+.categorieimg{
+    width: 17.938rem;
+    height: 26.875rem;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.categorieimg img {
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+
+.btnMoreCategorie{
+    width: 40%;
+    margin: auto;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    background-color: #6A7B67;
+    text-decoration: none;
+    color: white;
+    border: none;
+    background: rgba(106, 123, 103, 0.72);
+    border-radius: 11px;
+}
+
+.btnMoreCategorie a{
+    color: white;
+}
+
+.abtusphoto img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.abtusparagraph{
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.abtusparagraph p{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.contactusparagraph{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+    h1{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 4rem;
+    }
+
+    h2{
+    padding-bottom: 10%;
+    }
+
+
+    }
+
+@media screen and (max-width: 770px) {
+
+    h1{
+    padding-top: 20%;
+    padding-bottom: 10%;
+    font-size: 3rem;
+    }
+
+h2{
+    padding-bottom: 10%;
+    }
+
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+*{
+    font-family: 'PT Serif', serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #E8DED1;
+}
+
+nav{
+    background-color: #E8DED1;
+    font-family: 'inter' ;
+}
+
+.nav-link{
+    color: #866C56;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.logoimg{
+    width: 9rem;
+}
+
+.navIcons{
+    color: #6A7B67;
+    margin: 0 0.5rem;
+}
+
+h1{
+    color: #866C56;
+    
+}
+
+.formSU{
+    width: 60%;
+    margin: 10% auto;
+}
+    
+.inputs {
+    font-family: 'Lato', sans-serif;
+    margin-top: 8%;
+}
+
+input{
+     margin-top : 1%;
+}
+    
+.inputemail{
+    font-family: 'Lato', sans-serif;
+    margin-top: 4%;
+}
+
+.labelinput{
+    color: #866C56;
+}
+    
+form{
+    margin-bottom: 15%;
+}
+
+footer{
+    margin-top: 12%;
+}
+    
+    @media screen and (max-width: 1000px) {
+        
+    .formSU{
+    width: 80%;
+    margin: auto;
+    }
+    
+    .inputs ,select{
+        margin: 4% 0px 4% 0px;
+    }
+    }
+    
+    @media screen and (max-width: 768px) {
+    
+    .profileLinksdiv{
+            margin: 1.5% 0px;
+    }
+}
+
+
